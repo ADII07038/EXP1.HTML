@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 450px;
+            border: 1px solid green;
+            padding: 20px 30px;
+        }
+
+        h3 {
+            color: green;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 220px;
+            height: 50px;
+            resize: none;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        button,
+        input[type="reset"] {
+            padding: 4px 8px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Output</h3>
+
+<div class="container">
+    <form>
+        <label>
+            Course:
+            <select>
+                <option>ECE</option>
+                <option>CSE</option>
+                <option>ME</option>
+                <option>CE</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <label><b>Feedback:</b></label><br>
+        <textarea placeholder="Write here..."></textarea>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset">
+            <button type="button" onclick="alert('Button Clicked!')">
+                Click Me
+            </button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

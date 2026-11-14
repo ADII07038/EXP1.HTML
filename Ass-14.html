@@ -1,0 +1,83 @@
+!DOCTYPE html>
+<html>
+<head>
+<style>
+    table {
+        border-collapse: collapse;
+        font-family: "Times New Roman", serif;
+    }
+
+    .main-table {
+        border: 1px solid #666;
+        margin: 20px;
+    }
+
+    .main-table th,
+    .main-table td {
+        border: 1px solid #666;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+    }
+
+    .nested-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .nested-table th,
+    .nested-table td {
+        border: 1px solid #666;
+        padding: 8px 12px;
+        text-align: left;
+    }
+
+    th {
+        font-size: 22px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<table class="main-table">
+    <tr>
+        <th>Day</th>
+        <th>Lab Batches</th>
+        <th>Faculty</th>
+        <th>Room</th>
+        <th>Time</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Friday</td>
+
+        <td rowspan="2">
+            <table class="nested-table">
+                <tr>
+                    <th>Batch</th>
+                    <th>System</th>
+                </tr>
+                <tr>
+                    <td>A1</td>
+                    <td>PC 1-20</td>
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>PC 21-40</td>
+                </tr>
+            </table>
+        </td>
+
+        <td rowspan="2">Dr. Sharma</td>
+        <td rowspan="2">Lab 2</td>
+        <td rowspan="2">2-4 PM</td>
+    </tr>
+
+    <tr></tr>
+</table>
+
+</body>
+</html>
+
+  
